@@ -1,0 +1,27 @@
+package zadaca3;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+		public class Glavna {
+
+			public static void main(String[] args) {
+				List<SportskiKlub> lista = new ArrayList<SportskiKlub>();
+				lista.add(new SportskiKlub("Mancester Junajted", "Fudbal", 20));
+				lista.add(new SportskiKlub("Milan", "Fudbal", 15));
+				lista.add(new SportskiKlub("Kiel", "Rakomet", 20));
+
+				Collections.sort(lista);
+				for (SportskiKlub a : lista) {
+					System.out.println(a.getIme());
+					System.out.println(a.getSport());
+					System.out.println(a.getBrnaclenovi());
+					System.out.println();
+				}
+			}
+		}
+
+	
+
+
